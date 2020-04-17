@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d0785049_2df24f90",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 752
+      },
+      "writtenOn": "2020-04-17T16:03:02Z",
+      "side": 1,
+      "message": "Upgrade zookeeper to 3.6.0 so that you get most of the ssl fixes",
+      "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e9478668_73718566",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 752
+      },
+      "writtenOn": "2020-04-17T16:03:02Z",
+      "side": 1,
+      "message": "Here also, I think you can upgrade to latest kafka",
+      "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "baad8794_542d78d1",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 752
+      },
+      "writtenOn": "2020-04-17T16:03:02Z",
+      "side": 1,
+      "message": "Please rephrase this sentence as \"libzookeeper and libzookeeper-devel rpm should be upgraded to 3.6.0 to provide zookeeper c++ client library ssl support\"",
+      "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "efb99ec3_ef65da4d",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 752
+      },
+      "writtenOn": "2020-04-17T16:03:02Z",
+      "side": 1,
+      "message": "Please mention the list of new parameters in container common.sh, so that other modules (config etc) can consume it.",
+      "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
