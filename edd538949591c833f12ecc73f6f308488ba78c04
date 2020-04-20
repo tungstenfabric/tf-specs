@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "434d7b7a_47fc6368",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 750
+      },
+      "writtenOn": "2020-04-20T09:05:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d0785049_2df24f90",
+      "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e9478668_73718566",
         "filename": "Zookeeper TLSv1.2 Support.md",
         "patchSetId": 1
@@ -33,6 +51,24 @@
       "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c92b7fcd_47adc3c8",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 750
+      },
+      "writtenOn": "2020-04-20T09:05:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e9478668_73718566",
+      "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "1c5e5e77_753a90ec",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 750
+      },
+      "writtenOn": "2020-04-20T09:05:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baad8794_542d78d1",
+      "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "efb99ec3_ef65da4d",
         "filename": "Zookeeper TLSv1.2 Support.md",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2020-04-17T16:03:02Z",
       "side": 1,
       "message": "Please mention the list of new parameters in container common.sh, so that other modules (config etc) can consume it.",
+      "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "98de3d8f_59e25e2e",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 750
+      },
+      "writtenOn": "2020-04-20T09:05:41Z",
+      "side": 1,
+      "message": "I didn\u0027t get this. All the parameters are mentioned below that would be present in .conf file.\nCan you one example?",
+      "parentUuid": "efb99ec3_ef65da4d",
       "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
