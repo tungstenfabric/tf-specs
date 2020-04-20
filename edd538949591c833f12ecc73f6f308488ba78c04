@@ -139,6 +139,24 @@
       "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b24468b5_c40e11ea",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 752
+      },
+      "writtenOn": "2020-04-20T13:12:45Z",
+      "side": 1,
+      "message": "Example - https://github.com/Juniper/contrail-container-builder/blob/master/containers/base/common.sh#L198",
+      "parentUuid": "98de3d8f_59e25e2e",
+      "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
     }
   ]
 }
