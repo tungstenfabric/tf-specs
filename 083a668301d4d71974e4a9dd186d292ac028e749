@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "186a7abe_59b8e128",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 752
+      },
+      "writtenOn": "2020-04-23T17:40:11Z",
+      "side": 1,
+      "message": "Please remove trailing whitespace",
+      "revId": "083a668301d4d71974e4a9dd186d292ac028e749",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5c9b06ac_fb2d4b32",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 752
+      },
+      "writtenOn": "2020-04-23T17:40:11Z",
+      "side": 1,
+      "message": "Please remove trailing whitespace",
+      "revId": "083a668301d4d71974e4a9dd186d292ac028e749",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4bd7c850_369a860d",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 752
+      },
+      "writtenOn": "2020-04-23T17:40:11Z",
+      "side": 1,
+      "message": "Please remove trailing whitespace",
+      "revId": "083a668301d4d71974e4a9dd186d292ac028e749",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}

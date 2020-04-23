@@ -157,6 +157,23 @@
       "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0f0201e0_f19e4d5b",
+        "filename": "Zookeeper TLSv1.2 Support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 752
+      },
+      "writtenOn": "2020-04-23T17:40:11Z",
+      "side": 1,
+      "message": "Please mention the topology details where this feature will be tested",
+      "revId": "edd538949591c833f12ecc73f6f308488ba78c04",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
     }
   ]
 }
