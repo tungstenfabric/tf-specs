@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1d0d235b_d422e17f",
+        "filename": "fragmentation_with_ecmp.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 232
+      },
+      "writtenOn": "2020-05-18T17:28:36Z",
+      "side": 1,
+      "message": "Drops were happening in both mirror ECMP and mirror non-ECMP case since both uses nh_udp_tunnel() function. The change to add custom field address both.",
+      "parentUuid": "0044c8f6_745b1239",
+      "revId": "745ea18ee5f1b57a1d8cc1677bcf41d7327eee70",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2cd936ea_308fcf02",
         "filename": "fragmentation_with_ecmp.md",
         "patchSetId": 3
@@ -33,6 +51,24 @@
       "revId": "745ea18ee5f1b57a1d8cc1677bcf41d7327eee70",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a03092e7_8e28c47a",
+        "filename": "fragmentation_with_ecmp.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 232
+      },
+      "writtenOn": "2020-05-18T17:28:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2cd936ea_308fcf02",
+      "revId": "745ea18ee5f1b57a1d8cc1677bcf41d7327eee70",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
     }
   ]
 }
