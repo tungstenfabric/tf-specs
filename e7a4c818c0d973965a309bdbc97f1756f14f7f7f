@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "54305166_87fafd25",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 631
+      },
+      "writtenOn": "2020-05-26T17:01:45Z",
+      "side": 1,
+      "message": "So you mean to say both PPS and latency is improved when this knob is turned on?",
+      "parentUuid": "9d1a991c_38f45258",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6c8cb67d_fd8226bd",
         "filename": "latency_improvements.md",
         "patchSetId": 2
@@ -66,6 +84,24 @@
       "side": 1,
       "message": "Default is off.",
       "parentUuid": "6c8cb67d_fd8226bd",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1bdc9da9_b9234c78",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 631
+      },
+      "writtenOn": "2020-05-26T17:01:45Z",
+      "side": 1,
+      "message": "If both latency and pps improve with this knob turned on, shouldn\u0027t the default be to turn ON this knob?",
+      "parentUuid": "ad829274_aae05aa6",
       "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
