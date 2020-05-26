@@ -105,6 +105,24 @@
       "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "efa5f858_42773f92",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 497
+      },
+      "writtenOn": "2020-05-26T20:35:12Z",
+      "side": 1,
+      "message": "It shouldn’t be default because require multiqueue support from VNF side, unfortunately not all VNFs support it. Without multiqueue a performance degradation will be significant (in fact whole packet processing will be limited to one core).",
+      "parentUuid": "1bdc9da9_b9234c78",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
     }
   ]
 }
