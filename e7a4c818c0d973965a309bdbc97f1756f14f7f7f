@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "afdba884_4240439d",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 631
+      },
+      "writtenOn": "2020-05-26T15:15:03Z",
+      "side": 1,
+      "message": "With this new knob of not moving pkts to different lcores based on hash, do we know the impact on PPS? Will we still get max performance or max PPS will reduce?",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6c8cb67d_fd8226bd",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 631
+      },
+      "writtenOn": "2020-05-26T15:15:03Z",
+      "side": 1,
+      "message": "What would be the default setting for this knob? Set to ON?",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
