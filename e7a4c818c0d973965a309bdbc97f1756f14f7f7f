@@ -270,6 +270,24 @@
     },
     {
       "key": {
+        "uuid": "165d0ded_1283695f",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 631
+      },
+      "writtenOn": "2020-05-27T12:23:07Z",
+      "side": 1,
+      "message": "Ok. If I understood correctly, in single queue case without the knob, multiple cores can process the packets from the same VM and hence performance is better. Correct?\n\nCan we do this dynamically without a knob? For eg: For VNFs which have multiqueue support, don\u0027t do load balancing and process the pkt in the same lcore which received it. If the VNF doesn\u0027t support multiqueue, do what we do today i.e loadbalance. Did we try this?",
+      "parentUuid": "98e209a4_fd06b9d4",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "fd69d1e9_4dac0d97",
         "filename": "latency_improvements.md",
         "patchSetId": 2
