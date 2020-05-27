@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6a417bfb_9fcf7151",
+        "filename": "R2008/port_profile_blueprint.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 837
+      },
+      "writtenOn": "2020-05-27T12:32:37Z",
+      "side": 1,
+      "message": "I see the flag placed in port profiles for \u0027physical\u0027 profile type on the design. If the port profile is assigned to the physical interface with other than the \u0027access\u0027 interface type and the flag is enabled, will the backend simply ignore the flag? Does it require any restriction or filtering on the UI side?",
+      "revId": "52c64f68f1b955f0e756865637f085f9ca0c073f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3aea0477_9009d73c",
+        "filename": "R2008/port_profile_blueprint.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 837
+      },
+      "writtenOn": "2020-05-27T12:32:37Z",
+      "side": 1,
+      "message": "Will the backend ignore the flag if the port profile is assigned to the MX interface? Does it require any restriction or filtering on the UI side?",
+      "revId": "52c64f68f1b955f0e756865637f085f9ca0c073f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9bcac2fd_0cefe4a3",
+        "filename": "R2008/port_profile_blueprint.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 837
+      },
+      "writtenOn": "2020-05-27T12:32:37Z",
+      "side": 1,
+      "message": "I don\u0027t see this property added to the port-profile schema. Please, correct me If I am wrong.",
+      "revId": "52c64f68f1b955f0e756865637f085f9ca0c073f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b3c23b4_8e07239f",
+        "filename": "R2008/port_profile_blueprint.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 837
+      },
+      "writtenOn": "2020-05-27T12:32:37Z",
+      "side": 1,
+      "message": "Will the backend ignore the flag if the port profile is assigned to the 10k switch\u0027s interface? Does it require any restriction or filtering on the UI side?",
+      "revId": "52c64f68f1b955f0e756865637f085f9ca0c073f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    }
+  ]
+}
