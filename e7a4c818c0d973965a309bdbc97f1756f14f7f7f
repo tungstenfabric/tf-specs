@@ -177,6 +177,24 @@
       "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7026caa1_7f1ccedd",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 641
+      },
+      "writtenOn": "2020-05-27T04:58:39Z",
+      "side": 1,
+      "message": "I had checked before adding the comment. What is not listed is \"Without multiqueue a performance degradation will be significant (in fact whole packet processing will be limited to one core)\". The negative impact is much more pronounced in that statement.",
+      "parentUuid": "52ac744d_c3518de7",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
     }
   ]
 }
