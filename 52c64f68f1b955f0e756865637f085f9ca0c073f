@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "e681a681_3977fc9f",
+        "filename": "R2008/port_profile_blueprint.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 504
+      },
+      "writtenOn": "2020-05-27T22:16:37Z",
+      "side": 1,
+      "message": "New design will not have the port profile type option any more. But that being said, we will definitely need UI filtering. For individual selected interface edit, this option must be delimited for non-access interfaces. For bulk interfaces edit, if this option is selected for a group of interfaces, not all being \u0027access\u0027 type, UI will have to cancel the operation. We will also have a check implemented in the backend nevertheless.",
+      "parentUuid": "6a417bfb_9fcf7151",
+      "revId": "52c64f68f1b955f0e756865637f085f9ca0c073f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3aea0477_9009d73c",
         "filename": "R2008/port_profile_blueprint.md",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2020-05-27T12:32:37Z",
       "side": 1,
       "message": "Will the backend ignore the flag if the port profile is assigned to the MX interface? Does it require any restriction or filtering on the UI side?",
+      "revId": "52c64f68f1b955f0e756865637f085f9ca0c073f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef610b60_e8db7c9f",
+        "filename": "R2008/port_profile_blueprint.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 504
+      },
+      "writtenOn": "2020-05-27T22:16:37Z",
+      "side": 1,
+      "message": "Yeah, the handling for device specific restrictions will be handled in the backend. Would not require UI filtering. So this option can still be shown for interfaces on a MX device as well.",
+      "parentUuid": "3aea0477_9009d73c",
       "revId": "52c64f68f1b955f0e756865637f085f9ca0c073f",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "c161b1a9_5e0e911e",
+        "filename": "R2008/port_profile_blueprint.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 504
+      },
+      "writtenOn": "2020-05-27T22:16:37Z",
+      "side": 1,
+      "message": "This property is already in the schema under physical interfaces (https://github.com/Juniper/contrail-api-client/blob/7e375c8e00068a4ef8519340ddc7b04129a59686/schema/fabric.xsd#L242). So it would not have been part of the diff.",
+      "parentUuid": "9bcac2fd_0cefe4a3",
+      "revId": "52c64f68f1b955f0e756865637f085f9ca0c073f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4b3c23b4_8e07239f",
         "filename": "R2008/port_profile_blueprint.md",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2020-05-27T12:32:37Z",
       "side": 1,
       "message": "Will the backend ignore the flag if the port profile is assigned to the 10k switch\u0027s interface? Does it require any restriction or filtering on the UI side?",
+      "revId": "52c64f68f1b955f0e756865637f085f9ca0c073f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b974e72d_1aafb41d",
+        "filename": "R2008/port_profile_blueprint.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 504
+      },
+      "writtenOn": "2020-05-27T22:16:37Z",
+      "side": 1,
+      "message": "The device family based restriction can also be factored in the backend. It would not require restriction or UI filtering therefore.",
+      "parentUuid": "4b3c23b4_8e07239f",
       "revId": "52c64f68f1b955f0e756865637f085f9ca0c073f",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": false
