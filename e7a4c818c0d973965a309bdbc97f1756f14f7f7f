@@ -123,6 +123,24 @@
       "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7541ea86_2fc6233e",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 641
+      },
+      "writtenOn": "2020-05-27T04:43:48Z",
+      "side": 1,
+      "message": "This should be explicitly mentioned in the \"Limitations\" section as the current description \ndoes not convey the negative impact clearly.",
+      "parentUuid": "efa5f858_42773f92",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
     }
   ]
 }
