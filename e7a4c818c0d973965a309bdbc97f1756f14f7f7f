@@ -73,6 +73,24 @@
     },
     {
       "key": {
+        "uuid": "3cf2f787_7a86dd4b",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 232
+      },
+      "writtenOn": "2020-05-27T11:13:52Z",
+      "side": 1,
+      "message": "yes",
+      "parentUuid": "d1cf0dd0_a2f58930",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6c8cb67d_fd8226bd",
         "filename": "latency_improvements.md",
         "patchSetId": 2
@@ -234,6 +252,24 @@
     },
     {
       "key": {
+        "uuid": "98e209a4_fd06b9d4",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 232
+      },
+      "writtenOn": "2020-05-27T11:13:52Z",
+      "side": 1,
+      "message": "If the knob is present and VM has single queue, the same core which dequeues packets from VM also needs to process them and send it out. This will degrade the performance. In contrast, if the knob is not present and VM has single queue, the receiving core just need to distribute the packets to other forwarding cores which perform packet processing.",
+      "parentUuid": "df36e31f_657135ae",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "fd69d1e9_4dac0d97",
         "filename": "latency_improvements.md",
         "patchSetId": 2
@@ -245,6 +281,30 @@
       "writtenOn": "2020-05-27T10:34:04Z",
       "side": 1,
       "message": "In case there is a mix of multiqueue and non multiqueue VNFs, what will happen?\nThe knob would be off and latency issue will still persist?\n\nIs it possible to predict what type of VNFs will be launched on the vrouter?",
+      "range": {
+        "startLine": 94,
+        "startChar": 0,
+        "endLine": 96,
+        "endChar": 55
+      },
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6bfb2802_6418b5d7",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 232
+      },
+      "writtenOn": "2020-05-27T11:13:52Z",
+      "side": 1,
+      "message": "This is not a favorable case. That is the reason we are having a knob. The user need to know what is does before enabling it. Also AFAIK, most of the telco use-cases just have one fat VM per compute. We cannot predict what type of VNF is launched on vRouter since multiqueue is property of nova-flavor, glance-image and also VNF capability.",
+      "parentUuid": "fd69d1e9_4dac0d97",
       "range": {
         "startLine": 94,
         "startChar": 0,
