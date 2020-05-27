@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "d1cf0dd0_a2f58930",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 631
+      },
+      "writtenOn": "2020-05-27T10:34:04Z",
+      "side": 1,
+      "message": "Do you mean to say that with multiqueue VNFs and with this knob enabled, we get 15-20% more pps along with latency of 100-150us?",
+      "parentUuid": "54305166_87fafd25",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6c8cb67d_fd8226bd",
         "filename": "latency_improvements.md",
         "patchSetId": 2
@@ -192,6 +210,47 @@
       "side": 1,
       "message": "I had checked before adding the comment. What is not listed is \"Without multiqueue a performance degradation will be significant (in fact whole packet processing will be limited to one core)\". The negative impact is much more pronounced in that statement.",
       "parentUuid": "52ac744d_c3518de7",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "df36e31f_657135ae",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 631
+      },
+      "writtenOn": "2020-05-27T10:34:04Z",
+      "side": 1,
+      "message": "\"Without multiqueue a performance degradation will be significant (in fact whole packet processing will be limited to one core).\"\nI am not sure why this would be the case. Can you please elaborate in detail?",
+      "parentUuid": "7026caa1_7f1ccedd",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fd69d1e9_4dac0d97",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 631
+      },
+      "writtenOn": "2020-05-27T10:34:04Z",
+      "side": 1,
+      "message": "In case there is a mix of multiqueue and non multiqueue VNFs, what will happen?\nThe knob would be off and latency issue will still persist?\n\nIs it possible to predict what type of VNFs will be launched on the vrouter?",
+      "range": {
+        "startLine": 94,
+        "startChar": 0,
+        "endLine": 96,
+        "endChar": 55
+      },
       "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
