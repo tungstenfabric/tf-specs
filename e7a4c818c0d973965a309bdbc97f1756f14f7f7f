@@ -288,6 +288,24 @@
     },
     {
       "key": {
+        "uuid": "1e64e049_93e7b00e",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 497
+      },
+      "writtenOn": "2020-05-27T17:12:42Z",
+      "side": 1,
+      "message": "Dynamic can be tricky from an operational perspective e.g. when multiqueue is enabled but only one queue on the VM side. This need to be provided explicitly by operator during VM/VNF onboarding. \nIdeal will be to have it config driven per VM port (like enable \"packet mode\")but for now majority of cases the knob for whole vRouter is ok (fat VNFs using all resources on a compute). To do not slow down delivery the feature I\u0027ll vote for the knob now and as enhancement config driven later.",
+      "parentUuid": "165d0ded_1283695f",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "fd69d1e9_4dac0d97",
         "filename": "latency_improvements.md",
         "patchSetId": 2
