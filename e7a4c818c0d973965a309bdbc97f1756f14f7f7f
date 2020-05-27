@@ -159,6 +159,24 @@
       "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7676af9c_770fe1d0",
+        "filename": "latency_improvements.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 232
+      },
+      "writtenOn": "2020-05-27T04:54:04Z",
+      "side": 1,
+      "message": "It is already mentioned that multiqueue needs to be enabled for this feature to work more effectively.",
+      "parentUuid": "52ac744d_c3518de7",
+      "revId": "e7a4c818c0d973965a309bdbc97f1756f14f7f7f",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
     }
   ]
 }
