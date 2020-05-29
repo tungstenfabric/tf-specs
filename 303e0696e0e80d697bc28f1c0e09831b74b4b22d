@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7bd0dae2_f7be02a0",
+        "filename": "latency_improvements.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 147
+      },
+      "writtenOn": "2020-05-29T11:43:07Z",
+      "side": 1,
+      "message": "as part of the solution can we mention the expected improvement in latency?",
+      "range": {
+        "startLine": 66,
+        "startChar": 0,
+        "endLine": 66,
+        "endChar": 8
+      },
+      "revId": "303e0696e0e80d697bc28f1c0e09831b74b4b22d",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "429babc0_f7e25c04",
+        "filename": "latency_improvements.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 147
+      },
+      "writtenOn": "2020-05-29T11:43:07Z",
+      "side": 1,
+      "message": "I think you meant send packet north bound?",
+      "range": {
+        "startLine": 82,
+        "startChar": 54,
+        "endLine": 82,
+        "endChar": 75
+      },
+      "revId": "303e0696e0e80d697bc28f1c0e09831b74b4b22d",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d5af02ce_5df5d68b",
+        "filename": "latency_improvements.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 147
+      },
+      "writtenOn": "2020-05-29T11:43:07Z",
+      "side": 1,
+      "message": "are there any side effects of enabling multiqueue virtio? if not why it\u0027s mentioned as limitation?",
+      "range": {
+        "startLine": 94,
+        "startChar": 33,
+        "endLine": 94,
+        "endChar": 70
+      },
+      "revId": "303e0696e0e80d697bc28f1c0e09831b74b4b22d",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dcfee72f_58f58a97",
+        "filename": "latency_improvements.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 147
+      },
+      "writtenOn": "2020-05-29T11:43:07Z",
+      "side": 1,
+      "message": "Let\u0027s mention only RHOSP",
+      "range": {
+        "startLine": 107,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 7
+      },
+      "revId": "303e0696e0e80d697bc28f1c0e09831b74b4b22d",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
