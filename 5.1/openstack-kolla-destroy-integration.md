@@ -10,7 +10,7 @@ invoke it specifically on those nodes where Openstack components are running.
 
 The contrail-ansible-deployer repo is currently integrated with our custom fork
 of the upstream repo:
-[Contrail-Kolla-Ansible](https://github.com/Juniper/contrail-kolla-ansible/tree/contrail/queens).
+[Contrail-Kolla-Ansible](https://github.com/tungstenfabric/tf-kolla-ansible/tree/contrail/queens).
 This fork keeps in sync with upstream kolla-ansible repo and thus already has
 the code for the destroy role but it is currently not being used.
 
