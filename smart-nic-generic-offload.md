@@ -26,7 +26,7 @@ The proposed solution defines a generic offload module layer in the vRouter.
 The generic offload layer logically resides between the vrouter datapath and
 the smart NIC. It registers to receive notifications/callbacks on vrouter
 configuration changes from the agent (these are based on previous work in
-contrail vrouter 3.1 branch, see https://github.com/Juniper/contrail-vrouter/
+contrail vrouter 3.1 branch, see https://github.com/tungstenfabric/tf-vrouter/
 blob/R3.1/include/vr_offloads.h).
 
 The generic offload layer is responsible for programming offload rules to the
