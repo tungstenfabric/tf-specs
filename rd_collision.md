@@ -195,5 +195,5 @@ bgp_design] http://juniper.github.io/contrail-vnc/bgp_design.html
 [adding_bgp_knob_to_opencontrail] http://www.opencontrail.org/addingbgp-knob-to-  
 opencontrail/
 
-[contrail_controller_src] https://github.com/Juniper/contrail-controller  
+[contrail_controller_src] https://github.com/tungstenfabric/tf-controller  
 [RFC4364] https://www.ietf.org/rfc/rfc4364.txt
