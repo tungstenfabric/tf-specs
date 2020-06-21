@@ -114,7 +114,7 @@ Specific unit tests to cover BGPaaS must also be covered as applicable.
 
 1. BFD RFC [RFC5880](https://tools.ietf.org/html/rfc5880)
 2. Seamless BFD [RFC7880](https://tools.ietf.org/html/rfc7880)
-3. BFD [source](https://github.com/Juniper/contrail-controller/tree/master/src/bfd)
+3. BFD [source](https://github.com/tungstenfabric/tf-controller/tree/master/src/bfd)
 4. Health-Check in [Agent](https://github.com/Juniper/contrail-controller/blob/master/src/vnsw/agent/oper/health_check.cc)
 5. Feature [BluePrint](https://blueprints.launchpad.net/juniperopenstack/+spec/bfd-for-bgpaas)
 6. [BFD based health check](https://blueprints.launchpad.net/juniperopenstack/+spec/bfd-over-vmis)

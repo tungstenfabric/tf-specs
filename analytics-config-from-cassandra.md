@@ -83,5 +83,5 @@ None
 
 # 11. References
 1. [Control node config from Cassandra spec](https://github.com/Juniper/contrail-controller/blob/master/specs/control_node_config_from_cassandra.md)
-2. [Python RabbitMq/Cassandra client code](https://github.com/Juniper/contrail-controller/tree/master/src/config/common)
-3. [C++ RabbitMq/Cassandra client code](https://github.com/Juniper/contrail-controller/tree/master/src/ifmap/client)
+2. [Python RabbitMq/Cassandra client code](https://github.com/tungstenfabric/tf-controller/tree/master/src/config/common)
+3. [C++ RabbitMq/Cassandra client code](https://github.com/tungstenfabric/tf-controller/tree/master/src/ifmap/client)
