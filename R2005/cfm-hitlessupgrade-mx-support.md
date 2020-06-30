@@ -82,4 +82,4 @@ Jira User Story: https://contrail-jws.atlassian.net/browse/CEM-6362
 Image Upgrade of VM Host based RE: https://www.juniper.net/documentation/en_US/junos/topics/concept/installation_upgrade.html
 
 # 18. Caveats or Known issues
-NA
+ 1. Hitless image upgrade will be supported on vmhost based REs for - junos:19.1R3, junos:19.2R2, junos:19.3R3, junos:19.4R2, junos:20.1R1, junos:20.2R1 and later releases, due to the junos bug - https://gnats.juniper.net/web/default/1468683#summary_tab
