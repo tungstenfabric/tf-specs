@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a17c2d1b_2d4df800",
+        "filename": "R2011/Dataplane_mac_ip_learning_feature.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 664
+      },
+      "writtenOn": "2020-07-02T08:02:16Z",
+      "side": 1,
+      "message": "I think we should be less specific w.r.t. BFD target. Here pod is assumed. We should rather BFD session will target an IP address on a port (with the appropriate learnt-mac). If this BFD session fails, IP and MAC are deleted.\n\nAdditionally, we should mention that this requires a new type of BFD HC (something like a \"per NH HC\" list applied to VNs)",
+      "revId": "d19a6e285134175528c335f6503a72beda53ea74",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "97ea92e0_28c4b6f5",
+        "filename": "R2011/Dataplane_mac_ip_learning_feature.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 664
+      },
+      "writtenOn": "2020-07-02T08:02:16Z",
+      "side": 1,
+      "message": "You should be more specific on the name of the move: this is an \"IP move\" and not a \"MAC move\" so as a to avoid any confusion \u0027i.e:; \"####Movement accross compute (IP move)\".\n\nBased on local ARP activity, compute1 advertises T2 evpn MAC/IP, T2 evpn MAC and L3VPN IP route.\nCompute2, receives these routes... (make sure to specific the list of routes).\n\nAdditionally, should not we make sure that L3VPN ip routes depend on MAC/IP state ?\n\nShall we include compute3 in same VN, which also needs a refresh of L2+L3 forwading information.",
+      "range": {
+        "startLine": 39,
+        "startChar": 23,
+        "endLine": 41,
+        "endChar": 13
+      },
+      "revId": "d19a6e285134175528c335f6503a72beda53ea74",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
