@@ -177,12 +177,11 @@ values. The best way to instrument this is still TBD.
 #### - Job Summary and History Page
 <img src="images/job_status_1.png" alt="drawing" height=700 width="1500"/>
 
-1) At any time, the user can log into UI and query a job status and history page
-for a selected time period
+1) At any time, the user can log into UI and query a job status and history page.
+Logs from three days ago upto current time is displayed.
 2) The user can click on any job and view detailed messages for that job,
 including any error messages for failed jobs
-3) The user can see the current in-progress percentage
-4) The user can select any in-progress job and abort the job
+3) The user can abort parent job, if in-progress. A child in-progress job cannot be aborted. 
 
 #### - Transaction View
 <Insert image here>
