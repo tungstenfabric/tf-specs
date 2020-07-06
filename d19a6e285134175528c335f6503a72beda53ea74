@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "b0dcc8a9_cec6d1f8",
+        "filename": "R2011/Dataplane_mac_ip_learning_feature.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 474
+      },
+      "writtenOn": "2020-07-06T11:19:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a17c2d1b_2d4df800",
+      "revId": "d19a6e285134175528c335f6503a72beda53ea74",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "97ea92e0_28c4b6f5",
         "filename": "R2011/Dataplane_mac_ip_learning_feature.md",
         "patchSetId": 4
@@ -30,6 +48,30 @@
       "writtenOn": "2020-07-02T08:02:16Z",
       "side": 1,
       "message": "You should be more specific on the name of the move: this is an \"IP move\" and not a \"MAC move\" so as a to avoid any confusion \u0027i.e:; \"####Movement accross compute (IP move)\".\n\nBased on local ARP activity, compute1 advertises T2 evpn MAC/IP, T2 evpn MAC and L3VPN IP route.\nCompute2, receives these routes... (make sure to specific the list of routes).\n\nAdditionally, should not we make sure that L3VPN ip routes depend on MAC/IP state ?\n\nShall we include compute3 in same VN, which also needs a refresh of L2+L3 forwading information.",
+      "range": {
+        "startLine": 39,
+        "startChar": 23,
+        "endLine": 41,
+        "endChar": 13
+      },
+      "revId": "d19a6e285134175528c335f6503a72beda53ea74",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "eb1a18b9_94518d3f",
+        "filename": "R2011/Dataplane_mac_ip_learning_feature.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 474
+      },
+      "writtenOn": "2020-07-06T11:19:13Z",
+      "side": 1,
+      "message": "yes L3VPN routes also depend on MAC/IP state",
+      "parentUuid": "97ea92e0_28c4b6f5",
       "range": {
         "startLine": 39,
         "startChar": 23,
