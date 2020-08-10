@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ce02f9b_eb2bab3c",
+        "filename": "R2011/Collapsed_spine_support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 515
+      },
+      "writtenOn": "2020-08-10T16:41:07Z",
+      "side": 1,
+      "message": "Why this is being modelled as an overlay-role, its confusing to the field and end-user. This is more of a topology.",
+      "revId": "f11cde0e339dae9eb4e4fc8132fcc1baff25fa52",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
