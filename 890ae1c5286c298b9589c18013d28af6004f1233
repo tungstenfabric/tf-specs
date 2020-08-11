@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "31e7057f_c667eb6e",
+        "filename": "Default_routing_fix_for_evpn_vxlan_logical_router.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 213
+      },
+      "writtenOn": "2020-08-11T10:35:09Z",
+      "side": 1,
+      "message": "Breakage is due to duplicate default routes. Adding specific routes is a solution",
+      "range": {
+        "startLine": 8,
+        "startChar": 256,
+        "endLine": 8,
+        "endChar": 283
+      },
+      "revId": "890ae1c5286c298b9589c18013d28af6004f1233",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8cd93980_416ce5d1",
+        "filename": "Default_routing_fix_for_evpn_vxlan_logical_router.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 213
+      },
+      "writtenOn": "2020-08-11T10:35:09Z",
+      "side": 1,
+      "message": "It can be any QFX",
+      "range": {
+        "startLine": 14,
+        "startChar": 65,
+        "endLine": 14,
+        "endChar": 71
+      },
+      "revId": "890ae1c5286c298b9589c18013d28af6004f1233",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cdf57583_fdb5b227",
+        "filename": "Default_routing_fix_for_evpn_vxlan_logical_router.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 213
+      },
+      "writtenOn": "2020-08-11T10:35:09Z",
+      "side": 1,
+      "message": "it should be LR VRF right? not sure what is LR1?",
+      "range": {
+        "startLine": 14,
+        "startChar": 138,
+        "endLine": 14,
+        "endChar": 153
+      },
+      "revId": "890ae1c5286c298b9589c18013d28af6004f1233",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5e1fb7b3_49e1c8be",
+        "filename": "Default_routing_fix_for_evpn_vxlan_logical_router.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 213
+      },
+      "writtenOn": "2020-08-11T10:35:09Z",
+      "side": 1,
+      "message": "default route",
+      "range": {
+        "startLine": 48,
+        "startChar": 122,
+        "endLine": 48,
+        "endChar": 132
+      },
+      "revId": "890ae1c5286c298b9589c18013d28af6004f1233",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "81fad037_4f4853ec",
+        "filename": "Default_routing_fix_for_evpn_vxlan_logical_router.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 213
+      },
+      "writtenOn": "2020-08-11T10:35:09Z",
+      "side": 1,
+      "message": "Is this an ask from test team? If so, please clarify it.",
+      "range": {
+        "startLine": 55,
+        "startChar": 351,
+        "endLine": 55,
+        "endChar": 431
+      },
+      "revId": "890ae1c5286c298b9589c18013d28af6004f1233",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "26085ddb_ffff433e",
+        "filename": "Default_routing_fix_for_evpn_vxlan_logical_router.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 213
+      },
+      "writtenOn": "2020-08-11T10:35:09Z",
+      "side": 1,
+      "message": "little confusing, bgp path is preferred over subnet path added locally by agent. Is that what you mean?",
+      "range": {
+        "startLine": 88,
+        "startChar": 53,
+        "endLine": 88,
+        "endChar": 87
+      },
+      "revId": "890ae1c5286c298b9589c18013d28af6004f1233",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
