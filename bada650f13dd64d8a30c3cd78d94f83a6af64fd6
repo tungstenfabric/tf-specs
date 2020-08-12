@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e59cdb03_110645ab",
+        "filename": "Default_routing_fix_for_evpn_vxlan_logical_router.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 641
+      },
+      "writtenOn": "2020-08-12T10:09:47Z",
+      "side": 1,
+      "message": "Add a section for Exceptions/Caveats. If there is none do call it out explicitly.",
+      "revId": "bada650f13dd64d8a30c3cd78d94f83a6af64fd6",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
