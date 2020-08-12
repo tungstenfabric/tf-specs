@@ -16,6 +16,24 @@
       "revId": "f11cde0e339dae9eb4e4fc8132fcc1baff25fa52",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7c117837_817dc4eb",
+        "filename": "R2011/Collapsed_spine_support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 843
+      },
+      "writtenOn": "2020-08-12T12:24:48Z",
+      "side": 1,
+      "message": "I assume, now you are okay after call with PLM for this.",
+      "parentUuid": "5ce02f9b_eb2bab3c",
+      "revId": "f11cde0e339dae9eb4e4fc8132fcc1baff25fa52",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
     }
   ]
 }
