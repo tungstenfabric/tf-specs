@@ -34,6 +34,57 @@
       "revId": "f11cde0e339dae9eb4e4fc8132fcc1baff25fa52",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "125a4e5d_de78e9a4",
+        "filename": "R2011/Collapsed_spine_support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 990
+      },
+      "writtenOn": "2020-08-20T09:06:32Z",
+      "side": 1,
+      "message": "Don\u0027t we need additional API for \"Collapsed-Spine\" role?",
+      "revId": "f11cde0e339dae9eb4e4fc8132fcc1baff25fa52",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9b9c05db_6639f936",
+        "filename": "R2011/Collapsed_spine_support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 990
+      },
+      "writtenOn": "2020-08-20T09:06:32Z",
+      "side": 1,
+      "message": "qfx10k node profile?. As per supported list QFX5120 also supported.",
+      "revId": "f11cde0e339dae9eb4e4fc8132fcc1baff25fa52",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e19e3252_2c212726",
+        "filename": "R2011/Collapsed_spine_support.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 990
+      },
+      "writtenOn": "2020-08-20T09:06:32Z",
+      "side": 1,
+      "message": "Do we need to measure and publish number of Collapsed Spine typologies CFM can manage?.",
+      "revId": "f11cde0e339dae9eb4e4fc8132fcc1baff25fa52",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
     }
   ]
 }
