@@ -92,10 +92,20 @@ None.
 
 Test Plan: https://drive.google.com/file/d/1rmHdcfmC5RK9lDKEx5pyd-JeSJE0YBdr/view?usp=sharing
 
-## 9.4 Solution test
+## 9.3 Solution test
 
-1]. Verify 100 default routes received from gateway in LR vrf as part of solution test.
-[Test team to add more as required]
+Test Plan document link below.
+
+https://drive.google.com/file/d/1njyI5iPraClISKFAS665Jrh3NjTQMmK_/view?usp=sharing
+
+## 9.4 Scale test
+
+ Verify LR scaling (# of LRs that will be configured in the system) since this change should not impact
+ the existing scale numbers of LR/VN (or any other objects), current supported LR scale should be supported
+ (Should be same as previous release R2008) after this change. Only new variable that is being introduced
+ and scale tested as part of this change is the number of routes received from PNF that we decided to qualify
+ to a average 25 and maximum of not greater than 100 per LR. scale test plan is detailed in solution test plan
+ document above.
 
 # 10. Documentation Impact
 
