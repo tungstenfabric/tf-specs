@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "958b8456_d594cb6e",
+        "filename": "R2011/CEM-16330-L2-DCI-OTT.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 126
+      },
+      "writtenOn": "2020-08-30T01:37:56Z",
+      "side": 1,
+      "message": "It could be overlay iBGP session too. We should support both.",
+      "revId": "25dcb751259dab9a5145d2493f7c2f71f85a8c42",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
