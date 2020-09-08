@@ -187,7 +187,7 @@ Slave/Agent Nodes consist of :
 
 Contrail controller is the brain of contrail which does the decision making. You will find config
 management, analytics, UI and control plane components for network virtualization.  You can find
-more information at https://github.com/Juniper/contrail-controller. Contrail exposes APIs for
+more information at https://github.com/tungstenfabric/tf-controller. Contrail exposes APIs for
 creating configuration and updating virtual network components. In Mesos, mesos manager will update
 all information regarding task (universal docker) to Contrail Controller via API server.  All
 Contrail controller components are micro service docker containers.

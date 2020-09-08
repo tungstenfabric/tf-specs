@@ -95,4 +95,4 @@ The details of Route Origin Override have to be added in the user documentation.
 
 [adding-bgp-knob-to-opencontrail](http://www.opencontrail.org/adding-bgp-knob-to-opencontrail/)
 
-[contrail-controller (source-code)](https://github.com/Juniper/contrail-controller/tree/master/)
+[contrail-controller (source-code)](https://github.com/tungstenfabric/tf-controller/tree/master/)
