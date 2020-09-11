@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "56371e5e_4dda6291",
+        "filename": "R2011/sriov_provisioning.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 850
+      },
+      "writtenOn": "2020-09-11T00:09:37Z",
+      "side": 1,
+      "message": "Per my understanding, there is no need for accessing Virtual Network the VMI is associated with to find out the SRIOV port and Switch port.\n\nIf multiple SRIOV ports could exist on one node, then recording the paring info of SRIOV and Switch ports upon provisioning would be handy for info retrieval.\n\nAlso, I remember in yesterday\u0027s talk, there was a step listed in the doc you showed me, saying that we need to create a new VMI after collecting all port info. Since we already have a VMI with VLAN as the Segmentation ID present in VN, I think we don\u0027t need extra creation.\n\nWhen creating VPG, how should we fill in the info of SR-IOV port and Switch port?",
+      "revId": "3b3142366c87978021dfbe3fbff996a93a82fb84",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
