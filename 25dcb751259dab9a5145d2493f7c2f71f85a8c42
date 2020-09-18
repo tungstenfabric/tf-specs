@@ -16,6 +16,23 @@
       "revId": "25dcb751259dab9a5145d2493f7c2f71f85a8c42",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9abb7b78_72dfb486",
+        "filename": "R2011/CEM-16330-L2-DCI-OTT.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 843
+      },
+      "writtenOn": "2020-09-18T04:53:40Z",
+      "side": 1,
+      "message": "Do we need to create a refs to VNs in case of L2 DCI?",
+      "revId": "25dcb751259dab9a5145d2493f7c2f71f85a8c42",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
     }
   ]
 }
