@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "11ead366_f18f8eea",
+        "filename": "R2011/telemetry_feature_blueprint.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 302
+      },
+      "writtenOn": "2020-09-22T18:22:11Z",
+      "side": 1,
+      "message": "This part needs to be moved to a separate document in UI repo. The UI is a proprietary project. UX design along with its implementation can\u0027t be committed to public repos.\n\nA link to document in UI repo can be added here later.",
+      "revId": "dccc52bbe99c747003f3d79d23e4ad07632bb4fa",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
