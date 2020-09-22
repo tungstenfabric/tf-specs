@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "94ede916_f96267b3",
+        "filename": "R2011/sriov_provisioning.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 56
+      },
+      "writtenOn": "2020-09-22T23:20:46Z",
+      "side": 1,
+      "message": "typo \"impact\"\n\nCan you add user workflows for all three use cases",
+      "revId": "a045b498483a8f00f5fd0b563f082f9404d75cb8",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bbfbad4e_5137b59c",
+        "filename": "R2011/sriov_provisioning.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 56
+      },
+      "writtenOn": "2020-09-22T23:20:46Z",
+      "side": 1,
+      "message": "Can you rephrase as below,\n\nNo VN exists, So\n1. User creates a Provider VN with Provider Network, Physnet, and VLAN using openstack (horizon or cli)\n2. User launches vRouter VM in the provider VN using openstack (horizon or cli)\n3. User launches SRIOV VM in the provider VN using openstack (horizon or cli)\n4. System follows the same steps as in use case 1",
+      "revId": "a045b498483a8f00f5fd0b563f082f9404d75cb8",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b8030161_0e4d4092",
+        "filename": "R2011/sriov_provisioning.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 56
+      },
+      "writtenOn": "2020-09-22T23:20:46Z",
+      "side": 1,
+      "message": "Can you rephrase as below,\n\nNon-provider VN and vRouter VM\u0027s already exists in the VN, So\n1. User converts the Non-provider VN to Provider VN using contraill (commandUI or vncApi)\n2. User launches SRIOV VM in the provider VN using openstack (horizon or cli)\n3. System follows the same steps as in use case 1",
+      "revId": "a045b498483a8f00f5fd0b563f082f9404d75cb8",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
