@@ -16,6 +16,24 @@
       "revId": "dccc52bbe99c747003f3d79d23e4ad07632bb4fa",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "02de9d97_5861333b",
+        "filename": "R2011/telemetry_feature_blueprint.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 504
+      },
+      "writtenOn": "2020-09-22T18:28:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "11ead366_f18f8eea",
+      "revId": "dccc52bbe99c747003f3d79d23e4ad07632bb4fa",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
     }
   ]
 }
