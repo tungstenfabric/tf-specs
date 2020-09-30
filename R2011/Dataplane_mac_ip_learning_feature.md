@@ -26,21 +26,21 @@ this is used as a fallback mechanism to check pod’s liveness in absence of
 BFD session for that IP address.
 The learnt routes are deleted in the following cases.
 
-###BFD session failure:
+### BFD session failure:
 Whenever BFD session goes down for a target IP address on a VM interface,
 Agent deletes the corresponding routes from inet and evpn table.
-###ARP/ND failure:
+### ARP/ND failure:
 agent deletes routes if arp is not resolved after max retries.
-###Pod movement(IP address movement):
+### Pod movement(IP address movement):
 Actually pod does not move from one VM to other but it can be destroyed in one
 VM and created in some other VM with the same IP address. Note that it is a
 IP move and not a MAC move. There are two  cases.
-####Movement in same compute
+#### Movement in same compute
 Since pod is destroyed and launched in same compute, so compute retract the
 older evpn routes for  MAC1/IP1 pair, advertises newer evpn routes for
 MAC2/IP1 pair and updated L3VPN route for IP1 to controller.
 and update and advertise inet route.
-####Movement across computes.
+#### Movement across computes.
 pod1 with MAC1/IP1 in compute1 is destroyed and pod2 is created with
 MAC2/IP1 in compute2 in a virtual network VN1. compute3 also subscribed for
 VN1(VRF).
@@ -60,33 +60,33 @@ event for evpn type2 MAC/IP route MAC1/IP1, evpn type2 MAC route MAC1 and
 route update event for L3VPN route for IP1 with nexthop set to compute2 to
 computes. All computes delete EVPN routes and its derived routes corresponding
 to MAC1/IP1 pair.
-###VMI health check failure/oper state down/VMI deletion:
+### VMI health check failure/oper state down/VMI deletion:
 When VMI’s health check fails or open state is down or VMI is deleted,
 pod routes learnt over this VMI are deleted.
 Note1: MAC-IP learning should be enabled on VN before launching of pods.
 Note2: no validation check for target IPs in monitor list on whether target IPs
 are present in same subnet of VN or not.
-##3.1 Alternative considered
+## 3.1 Alternative considered
 None
-##3.2 API schema changes
+## 3.2 API schema changes
 
 1. MAC-IP learning enable/disable option on virtual network
 2. new health check template for BFD mintoring for pods
 3. virtual netwoek changes for supporting health check object binding on
    virtual network
-##3.3 User workflow impact
+## 3.3 User workflow impact
 User need to enable MAC-IP learning on virtual network to use this feature.
 User should use new health check template to run BFD for pods.
-##3.4 UI changes
+## 3.4 UI changes
 1. MAC-IP learning flag for virtual network object.
 2. new BFD health check type and monitor target should support list of
     IP addresses.
 3. service healthcheck option in virtual network object.
-##3.5 Operations and Notification impact
+## 3.5 Operations and Notification impact
 None.
-#4. Implementation
-##4.1 Work items
-###4.1.1 Agent
+# 4. Implementation
+## 4.1 Work items
+### 4.1.1 Agent
 A new MAC-IP learning module is added to manage the following.
 1. process trap entries for MAC-IP learning.
 2. creates interface NH and MPLS labels for MAC-IP pair.
@@ -108,7 +108,7 @@ to MAC-IP learning module.
 maintain a list of monitoring IP addresses per VN so that when new MAC-IP
 address is learnt, if new IP is present in the list , then health check is
 initiated for that MAC-IP pair.
-###4.1.2 Vrouter
+### 4.1.2 Vrouter
 1. if MAC-IP learning is enabled on VM interface, the following cases are
 handled.
 1.1 layer 3 forwarding is enabled on VM interface
@@ -119,19 +119,19 @@ if entry is not found, then trap the packet to agent for learning.
 1.2 layer 3 forwarding is not enabled on VM interface.
 do source MAC lookup in bridge table.
 if entry is not found, trap the packet to agent for learning.
-#5 Performance and scaling impact
+# 5 Performance and scaling impact
 max number of pods supported for compute is 50.
-#6 Upgrade
+# 6 Upgrade
 schema changes for this feature are extentions to the objects. so it does
 not affect upgrade.
-#7 Deprecations
-#8 Dependencies
-#9 Testing
+# 7 Deprecations
+# 8 Dependencies
+# 9 Testing
 TBD
-#10 Documentation Impact
-#11 Caveats
+# 10 Documentation Impact
+# 11 Caveats
 Ipv6 is not supported in R2011 release.
-#12 References
+# 12 References
 
    
 
