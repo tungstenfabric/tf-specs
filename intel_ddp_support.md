@@ -14,7 +14,7 @@ In contrail, all the overlay MPLS or VXLAN tunnels terminate at the compute
 node instead of hardware switch like QFX. They terminate at a software switch-
 cum-router called vRouter which is running in all the computes and it is the
 main dataplane component of contrail. vRouter can either run as a kernel module
-or a DPDK application. The most common use-case in DPDK mode. It is the
+or a DPDK application. The most common use-case is DPDK mode. It is the
 workhorse of the contrail system. Each and every packet in the contrail system
 flows through vRouter. It essentially forwards packets between VMs and physical
 interface. It is a multi-core, multi-threaded component since it needs to be
@@ -30,7 +30,7 @@ Step 2 - For each hardware queue which is configured, the vRouter allocates a
 dedicated CPU core to poll the packets and dequeue it for further processing.
 
 Step 3 - For certain types of packets, the NIC card cannot load balance the
-packets properly. In vRouter software, we can this figure this out. If NIC has
+packets properly. In vRouter software, we can figure this out. If NIC has
 load balanced it properly, the same CPU core which dequeued the packet will do
 the packet processing also. If not, the receiving CPU core performs software
 load-balancing by distributing the packets to other CPU cores which will do the
@@ -104,14 +104,17 @@ of packet headers for this encapsulation
 Step 3 - Compile and create a binary package (.pkgo) which can be applied to
 the NIC
 
-Step 4 - Compile and create a binary package (.pkgo) which can be applied to
-the NIC
-
-Step 5 - Now the NIC is enabled to recognize MPLSoGRE packets
+Step 4 - Now the NIC is enabled to recognize MPLSoGRE packets
 
 Code changes
 ------------
-TBD
+DDP feature applicable only for forville NIC family. When DPDK bootup with
+command-line argument as --ddp and NIC driver as "net_i40e", vrouter programs
+DDP profile stored in "/var/lib/ddp/mplsogreudp.pkg" for all ports.
+
+Suppose, contrail-vrouter-dpdk passed with command line argument as --ddp and
+NIC is not fortville(X710 series), vrouter silently ignores loading DDP profile
+and bootup asusual.
 
 Performance measurements
 ------------------------
@@ -135,15 +138,19 @@ Deployments supported
 CLI changes
 -----------
 dpdkinfo tool will display the status of DDP
+New CLI added dpdkconf to add/delete DDP profile image.
+dpdkinfo --ddp list -> To display the DDP profile.
+dpdkconf --ddp add -> Add DDP profile, if NIC is fortville.
+dpdkconf --ddp delete -> Delete already loaded DDP profile.
 
 Default configuration
 ---------------------
-DDP is enabled by default if the NIC is fortville. To force-disable DDP, use the
-new command-line option --no-ddp
+By default DDP is not enabled, use the new command-line option --ddp to enable
+DDP for fortville NIC.
 
 Command-line options
 --------------------
-We can force disable DDP using a new command-line option --no-ddp
+New command-line option --ddp to enable DDP only for fortville NIC family.
 
 UI changes
 -----------
