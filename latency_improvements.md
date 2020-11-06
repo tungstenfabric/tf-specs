@@ -118,4 +118,10 @@ None
 Test cases:
 -----------
 TBD
+
+Results:
+--------
+Latency Before: 700us
+Latency After:  150us
+
 ```
