@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f445e949_cfc4733f",
+        "filename": "R2102/CEM-15726-Manage-Configlets.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 843
+      },
+      "writtenOn": "2020-11-11T16:19:40Z",
+      "side": 1,
+      "message": "Is there any restriction on the models? if not, remove these specifics and version.",
+      "revId": "33bdaba9fe90cf26c9ff13e8fb0a61b47da558e0",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "173c31f7_686dcd8c",
+        "filename": "R2102/CEM-15726-Manage-Configlets.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 843
+      },
+      "writtenOn": "2020-11-11T16:19:40Z",
+      "side": 1,
+      "message": "capture the IF-MAP semantics here.",
+      "revId": "33bdaba9fe90cf26c9ff13e8fb0a61b47da558e0",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
