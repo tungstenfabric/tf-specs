@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "e4a1c66e_f9034c04",
+        "filename": "R2102/CEM-15726-Manage-Configlets.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 843
+      },
+      "writtenOn": "2020-11-11T16:23:57Z",
+      "side": 1,
+      "message": "Capture more details in the proposed solution.",
+      "revId": "33bdaba9fe90cf26c9ff13e8fb0a61b47da558e0",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "173c31f7_686dcd8c",
         "filename": "R2102/CEM-15726-Manage-Configlets.md",
         "patchSetId": 1
