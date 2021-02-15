@@ -44,7 +44,7 @@ This feature will be supported on Juju and RHOSP deployers.
 
 ### 3.1.1 XMPP traffic flow
 
-![](./images/image1.png){width="6.5in" height="3.388888888888889in"}
+![](../images/image1.png){width="6.5in" height="3.388888888888889in"}
 
 -   In the above diagram, we have a compute configured with lo:1interface having 8.1.1.1/32 IP address and there is a controller configured with 30.1.1.2 IP address. The compute and controller are connected via an IP CLOS based fabric n/w.
 
@@ -73,7 +73,7 @@ This feature will be supported on Juju and RHOSP deployers.
 
 ### 3.1.2 VM to VM traffic flow (inter compute)
 
-![](./images/image2.png){width="6.5in" height="3.486111111111111in"}
+![](../images/image2.png){width="6.5in" height="3.486111111111111in"}
 
 -   In the above diagram, we have VM1 hosted on Compute1 and VM2 hosted on Compute2.
 
