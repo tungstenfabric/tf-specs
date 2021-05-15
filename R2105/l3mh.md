@@ -19,7 +19,11 @@ Contrail vRouter software's assumption of a single fabric interface for computes
 
 In phase1, vRouter would support multihoming to upto 3 ToR leaf switches. The vRouter computes and ToR switches would be configured with static routing to reach the lo interface of the vRouter. Also only vRouter in kernel mode will be supported in phase1.
 
-This feature will be supported on Juju and RHOSP deployers.
+This feature will be supported on Juju and RHOSP deployers and ansible deployer.
+
+Below is topology used for l3mh feature tests and for reference where vrouter is multihomed to two physical interfaces on two ToR leaf switches.
+
+![](../images/Vrouter_l3mh_topo.png){width="6.5in" height="3.388888888888889in"}
 
 3.1 High level solution overview
 --------------------------------
@@ -114,6 +118,83 @@ Instead of using Netfilter hook to capture XMPP and VR to VR Encrypted packets i
 **8. Provisioning changes**
 ===========================
 
+8.1 Instances.yaml
+-------------------
+
+For provisioning l3mh topology as shown in section 3 above, below instances.yaml file was used and contrail cluster was provisioned using ansible deployer.
+
+global_configuration:
+  CONTAINER_REGISTRY: svl-artifactory.juniper.net/contrail-nightly
+  REGISTRY_PRIVATE_INSECURE: True
+
+provider_config:
+  bms:
+    ssh_pwd: c0ntrail123
+    ssh_user: root
+    ntpserver: 10.84.5.100
+    domainsuffix: local
+instances:
+  controller:
+    provider: bms
+    ip: 192.168.120.23
+    roles:
+      openstack:
+      config_database:
+      config:
+      control:
+      analytics:
+      webui:
+  compute1:
+    provider: bms
+    ip: 192.168.120.21
+    roles:
+      openstack_compute:
+      vrouter:
+        VROUTER_HOSTNAME: compute1
+  compute2:
+    provider: bms
+    ip: 192.168.120.22
+    roles:
+      openstack_compute:
+      vrouter:
+        VROUTER_HOSTNAME: compute2
+contrail_configuration:
+  CONTRAIL_VERSION: master.latest
+  CLOUD_ORCHESTRATOR: openstack
+  CONTROLLER_NODES: 192.168.120.23
+  CONTROL_NODES: 30.1.1.1
+  KEYSTONE_AUTH_ADMIN_PASSWORD: c0ntrail123
+  RABBITMQ_NODE_PORT: 5673
+  KEYSTONE_AUTH_URL_VERSION: /v3
+  L3MH_CIDR: 108.1.1.0/24
+kolla_config:
+  kolla_globals:
+    kolla_internal_vip_address: 192.168.120.23
+    contrail_api_interface_address: 192.168.120.23
+    keepalived_virtual_router_id: "111"
+    enable_haproxy: "no"
+    enable_ironic: "no"
+    enable_swift: "no"
+  kolla_passwords:
+    keystone_admin_password: c0ntrail123
+
+8.2 User Configuration Requirement
+---------------------------------
+
+- User is responsible for underlay configurations as stated below. Add ecmp route for each control node on computes.
+
+- User should add a ecmp route on compute node to provide reachability to control nodes.
+  Provisioning script does a ip route lookup and picks physical interfaces from ecmp route.
+  User should do necessary configuration to make this route persistent across reboots and interface flaps.
+  physical interface name list,address list and gateway address list for above interfaces is populate in 
+  contrail-vrouter-agent.conf on every compute node.
+
+-  User should create loopback interface on compute node and assign ip address to it from L3MH_CIDR as
+   specified in instance.yaml. ToR leaf configuration should be done by user to ensure connectivity between
+   computes using loopback address on compute node via physical interfaes which are multihomed as identified above.
+   Ip address and reachibility for loopback interface should be made persistent across reboots. This loopback ip
+   is populated in contrail-vrouter-agent.conf on each compute node by provisioning script.
+ 
 **9. Implementation**
 =====================
 
