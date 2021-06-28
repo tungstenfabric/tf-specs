@@ -123,6 +123,7 @@ Instead of using Netfilter hook to capture XMPP and VR to VR Encrypted packets i
 
 For provisioning l3mh topology as shown in section 3 above, below instances.yaml file was used and contrail cluster was provisioned using ansible deployer.
 
+```
 global_configuration:
   CONTAINER_REGISTRY: svl-artifactory.juniper.net/contrail-nightly
   REGISTRY_PRIVATE_INSECURE: True
@@ -177,6 +178,7 @@ kolla_config:
     enable_swift: "no"
   kolla_passwords:
     keystone_admin_password: c0ntrail123
+```
 
 8.2 User Configuration Requirement
 ---------------------------------
@@ -194,6 +196,11 @@ kolla_config:
    computes using loopback address on compute node via physical interfaes which are multihomed as identified above.
    Ip address and reachibility for loopback interface should be made persistent across reboots. This loopback ip
    is populated in contrail-vrouter-agent.conf on each compute node by provisioning script.
+
+- Instead of the netfilter hook that is used in case of multihoming when vrouter is in Kernel mode, a source routing technique will be used in case of multihoming when vrouter is in DPDK mode. To enable this, a default vrf for source route will be configured on the kernel during deployment. After this configuration, any packet with the lo:0 IP as a source IP will be sent to the vhost0 interface.
+    - Eg: (If 80.1.1.1/32 is the loopback IP(lo:0)), the following configuration is used for source routing using a random table number 100:
+      ip route add table 100 to default dev vhost0
+      ip rule add from 80.1.1.1/32 table 100
  
 **9. Implementation**
 =====================
@@ -555,7 +562,19 @@ In case of flows starting from the fabric side, Vrouter can give a hint to agent
 
 The same nexthop used for unicast traffic will be used for BUM case as well. The only difference would be, it will be part of Composite Multicast Nexthop. No additional changes required.
 
-### 9.3.7 CLI changes
+### 9.3.7 DPDK Support
+
+![L3MH Dpdk tap interfaces](../images/vrouter_dpdk_l3mh_tap_interfaces_example.png
+
+ - In L3MH mode, multiple L3 interfaces will be binded to DPDK. Additional queues to the lcores for each multihomed interface will be created.
+ - vhost0 will be created with VRRP Mac and no IP in case of L3MH and multiple physical interfaces are taken up by DPDK. In multihoming, the vif->bridge for vhost0 will be a list of pointers pointing to each L3 uplink vif.
+ - tuntap interfaces will be created on the kernel corresponding to each physical interface and a vif will be added for each of these tuntap interfaces. These tuntap vifs will be created by the vrouter itself as a part of the vif add request for vhost0 received by the vrouter.
+ - These tap interfaces will have the IP and MAC corresponding to the L3 interfaces taken up by DPDK and their vifs will be cross connected to the corresponding NICs or physical vifs. Here, vif->bridge for a tuntap will point to the corresponding physical vif and the vif->bridge for the physical interface will point to corresponding tap vif.
+ - For packet destined to the loopback IP (lo:0 interface), the destination MAC will be force changed to VRRP MAC and the packet will be sent to the agent for giving a response.
+ - For any packets destined to or originating from the kernel, the transmission of these packets will happen via the tuntap interfaces created on the kernel.
+ - Instead of the netfilter hook that is used in case of multihoming when vrouter is in Kernel mode, a source routing technique will be used in case of multihoming when vrouter is in DPDK mode. To enable this, a default vrf for source route will be configured on the kernel during deployment. After this configuration, any packet with the lo:0 IP as a source IP will be sent to the vhost0 interface. Refer to Section 8.2 for an example configuration.
+
+### 9.3.8 CLI changes
 
 -   VIF utility
 
