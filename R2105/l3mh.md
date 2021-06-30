@@ -564,7 +564,7 @@ The same nexthop used for unicast traffic will be used for BUM case as well. The
 
 ### 9.3.7 DPDK Support
 
-![L3MH Dpdk tap interfaces](../images/vrouter_dpdk_l3mh_tap_interfaces_example.png
+![L3MH Dpdk tap interfaces](../images/vrouter_dpdk_l3mh_tap_interfaces_example.png)
 
  - In L3MH mode, multiple L3 interfaces will be binded to DPDK. Additional queues to the lcores for each multihomed interface will be created.
  - vhost0 will be created with VRRP Mac and no IP in case of L3MH and multiple physical interfaces are taken up by DPDK. In multihoming, the vif->bridge for vhost0 will be a list of pointers pointing to each L3 uplink vif.
