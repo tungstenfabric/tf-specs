@@ -109,6 +109,10 @@ committers:
       company: ''
       id: 'Marek.Chwal'
       timezone: 'Europe/Berlin'
+    - name: 'Szymon Krasuski'
+      email: 'krasuski.szymon.piotr@gmail.com'
+      id: 'Dysproz'
+      company: ''
 tsc:
     # yamllint disable rule:line-length
     approval: 'https://wiki.tungsten.io/display/TUN/Projects'
