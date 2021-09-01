@@ -85,10 +85,22 @@ This feature will be tested on following deployments -
 k8s and openshift
 Feature test link - https://junipernetworks.sharepoint.com/:x:/s/contrail-india-dev/EVwTkI1U8G5Kszf1b9l1vjcBK5Caj2GOLrQ3QOqllznj8A?e=wYRzuL
 
-# 11. Documentation Impact
+# 11. Unsupported scenario
+ 
+ **Setup**: Deployment of 2 pods in 2 computes, one in each.
+ 
+ **Trigger**: Scale-up
+ 
+ **Result**: Flow stickiness may break.
+ 
+ **Reason**: Before scale-up flow will be non-ecmp with respect to the compute forwarding the traffic. After scale-up it will become an ecmp flow which will trigger rehashing.
+ 
+ Flow stickiness only works if flow is ecmp before and after scale up/down.
+
+# 12. Documentation Impact
 
 NA
 
-# 12. References
+# 13. References
 
 NA
