@@ -51,6 +51,9 @@ in that exact order, If B gets deleted, the new composite NH created should be A
 
 In general, when ECMP path is changed, Route will be exported to Controller. Controller would then send back this update to Compute and it will update the Bgp Peer Path. Same Composite NH handling needs to be done for this Bgp Peer Path also.
 
+In case of scale-down, a new composite NH will be created with member NH list as A <NULL> C. It will also trigger a change of flow index, but this doe
+sn't affect the existing sessions, as the total number of member NH remains same and the down NH index will be marked as NULL.
+
 # 6. Performance and Scaling Impact
 
 # 7. Upgrades
@@ -72,10 +75,10 @@ There are no dependencies for this feature.
 Following Unit-tests will be added in ecmp_local and ecmp_remote scenarios.
 
 1. Member NH list change from n to n+1 where n > 1. Composite NH and its id should remain same.
-2. Member NH list change from n+1 to n where n > 1. Composite NH and its id should remain same.
+2. Member NH list change from n+1 to n where n > 1. Composite NH and its id may change.
 3. Flow Stickiness
-   1. Member NH list change from n to n+1 where n > 1. Flow should not get deleted and flow ecmp_index should remain same.
-   2. Member NH list change from n +1 to n where n > 1. Flow should not get deleted and flow ecmp_index should remain same.
+   1. Member NH list change from n to n+1 where n > 1. Flow should not get deleted and flow ecmp_index should remain same, and endpoint pod should remain same.
+   2. Member NH list change from n +1 to n where n > 1. Flow will get recreated and flow ecmp_index should remain same, and endpoint pod should remain same.
 4. Non-Composite NH to Composite NH transition. Flow should get reevaluated and should hash to one member NH.
 5. Composite NH to Non-Composite NH transition. Flow should get reevaluated and should map to Interface NH.
 
